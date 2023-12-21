@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import { Button, Dialog, TextField } from "@material-ui/core";
 import 'flowbite';
 import ShowMoreText from "react-show-more-text";
 import Pagination from '@mui/material/Pagination';
@@ -280,7 +279,7 @@ function SiplePages() {
            <div className='flex justify-center items-center cursor-pointer mx-5'>
            {items.map((item) => (
              <div key={item.id} className="item">
-                <Button
+                <button
                 onClick={() => {
                   setDialogEditItem(item);
                   setDialogInput(item.email);
@@ -289,7 +288,7 @@ function SiplePages() {
                 }}
               >
                 <img src={edit_svg_blue} />
-              </Button>
+              </button>
            
           </div>
         ))}
